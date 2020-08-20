@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProTutor", "ProTutor\ProTutor.csproj", "{59A28509-3016-48E5-88A8-CC36A9E5AFB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59A28509-3016-48E5-88A8-CC36A9E5AFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A28509-3016-48E5-88A8-CC36A9E5AFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A28509-3016-48E5-88A8-CC36A9E5AFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A28509-3016-48E5-88A8-CC36A9E5AFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9950530-F08E-4D48-9205-378BACC6F536}
+	EndGlobalSection
+EndGlobal
