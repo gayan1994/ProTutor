@@ -10,10 +10,7 @@
             height: 374px;
         }
 
-        .t1 {
-            margin-left: 250px;
-            width: 450px;
-        }
+        
 
         .sign-in {
             margin-left: 150px;
@@ -48,7 +45,7 @@
         }
         .auto-style2 {
             margin-left: 250px;
-            width: 400px;
+            width: 420px;
             height: 674px;
         }
     </style>
@@ -68,14 +65,49 @@
 
 
 
-                <asp:TextBox ID="tbxfName" type="text" placeholder="First Name" runat="server" /><br />
-                <asp:TextBox ID="tbxlName" type="text" placeholder="Last Name" runat="server"/><br />
-                <asp:TextBox ID="tbxEmail" type="text" placeholder="Your Email" runat="server"/><br />
-                <asp:TextBox ID="tbxMobNum" type="text" placeholder="Your Mobile Number" runat="server"/><br />
+                <asp:TextBox ID="tbxfName" type="text" placeholder="First Name" runat="server" />
+                <asp:RequiredFieldValidator id="ReqFName"
+                    ControlToValidate="tbxfName"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter your First Name!"
+                    runat="server"/> <br />
+
+
+                <asp:TextBox ID="tbxlName" type="text" placeholder="Last Name" runat="server"/>
+                <asp:RequiredFieldValidator id="ReqLName"
+                    ControlToValidate="tbxlName"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter your Last Name!"
+                    runat="server"/> <br />
+
+
+                <asp:TextBox ID="tbxEmail" type="text" placeholder="Your Email" runat="server"/>
+                <asp:RequiredFieldValidator id="ReqEmail"
+                    ControlToValidate="tbxEmail"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter your Email!"
+                    runat="server"/> 
+
+                <asp:RegularExpressionValidator runat="server" 
+                id="RegularExpressionValidator2" 
+                controltovalidate="tbxEmail" 
+                validationexpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" 
+                errormessage="Invalid email address" /><br />
+                
+
+
+                <asp:TextBox ID="tbxMobNum" type="text" placeholder="Your Mobile Number" runat="server"/>
+                <asp:RequiredFieldValidator id="ReqMobNo"
+                    ControlToValidate="tbxMobNum"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter your Mobile Number!"
+                    runat="server"/> <br />
 
                 <p>birthday:</p>
 
-                <asp:TextBox ID="Text5" type="text" runat="server"/><br />
+                <input type="date" id="DOBPicker" runat="server"/>
+                <span id="dobValidation" runat="server" visible="false">Please choose a valid date of birth</span>
+                <br />
 
 
                 <br />
@@ -148,8 +180,32 @@
                 <input id="Text6" type="text" placeholder="What is the date which you can start upon our acceptance?"/><br />
                 <input id="Text6" type="text" placeholder="Do you have any other information to share with us to support your application?"/><br />
 
-                <asp:TextBox ID="Pass2" type="password" placeholder="Password" runat="server"/><br />
-                <asp:TextBox ID="rPass" type="password" placeholder="Repeat password" runat="server"/><br />
+                <asp:TextBox ID="Pass2" type="password" placeholder="Password" runat="server"/>
+                <asp:RequiredFieldValidator id="ReqPass"
+                    ControlToValidate="Pass2"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter your Password!"
+                    runat="server"/>
+
+            <asp:RegularExpressionValidator runat="server" 
+                id="rexNumber" 
+                controltovalidate="Pass2" 
+                validationexpression="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$" 
+                errormessage="Password must be 8-10 characters long with at least one numeric character." /><br />
+                
+                <asp:TextBox ID="rPass" type="password" placeholder="Repeat password" runat="server"/>
+                <asp:RequiredFieldValidator id="ReqRPass"
+                    ControlToValidate="rPass"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter your Password again!"
+                    runat="server"/>
+                <asp:CompareValidator runat="server" 
+                    id="cmpNumbers" 
+                    controltovalidate="rPass" 
+                    controltocompare="Pass2" 
+                    operator="Equal" 
+                    type="String" 
+                    errormessage="Password and Repeated password doesn't match" /><br />
 
 
 

@@ -33,6 +33,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox tbxfName;
 
         /// <summary>
+        /// ReqFName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqFName;
+
+        /// <summary>
         /// tbxlName control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxlName;
+
+        /// <summary>
+        /// ReqLName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqLName;
 
         /// <summary>
         /// tbxEmail control.
@@ -51,6 +69,24 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox tbxEmail;
 
         /// <summary>
+        /// ReqEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqEmail;
+
+        /// <summary>
+        /// RegularExpressionValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+
+        /// <summary>
         /// tbxMobNum control.
         /// </summary>
         /// <remarks>
@@ -60,13 +96,31 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox tbxMobNum;
 
         /// <summary>
-        /// Text5 control.
+        /// ReqMobNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Text5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqMobNo;
+
+        /// <summary>
+        /// DOBPicker control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl DOBPicker;
+
+        /// <summary>
+        /// dobValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dobValidation;
 
         /// <summary>
         /// RadioButtonList1 control.
@@ -87,6 +141,24 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox Pass2;
 
         /// <summary>
+        /// ReqPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqPass;
+
+        /// <summary>
+        /// rexNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator rexNumber;
+
+        /// <summary>
         /// rPass control.
         /// </summary>
         /// <remarks>
@@ -94,6 +166,24 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox rPass;
+
+        /// <summary>
+        /// ReqRPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqRPass;
+
+        /// <summary>
+        /// cmpNumbers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cmpNumbers;
 
         /// <summary>
         /// CheckBox1 control.

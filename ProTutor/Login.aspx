@@ -17,6 +17,8 @@
         }
 
         .forgot-password {
+            margin-right:657px;
+            float:right;
             color: black;
             text-decoration: none;
         }
@@ -75,12 +77,17 @@
                 transition: all 0.4s ease 0s;
             }
 
-            .log{
+            .log {
 
                 font-size: 20px;
                 background-color: #f5f5f5
                 
             }
+
+            .align-left {
+                margin-left: 175px;
+            }
+
         .auto-style2 {
             font-size: 20px;
             background-color: #f5f5f5;
@@ -94,8 +101,8 @@
             font-weight:bold;
         }
 
-        #HyperLink2{
-            
+        #createAccount{
+             margin-left: 175px;
         }
     </style>
 </head>
@@ -119,18 +126,38 @@
                     If you are already registered please login directly here</span><br class="Apple-interchange-newline" />
                     <br />
                     <br />
-                    <asp:TextBox ID="Text1" type="text" placeholder="Email" class="e-mail" runat="server" /><br />
+
+                    <asp:TextBox ID="tbxEmail" type="text" placeholder="Email" class="e-mail" runat="server" /><br />
+                    <asp:RequiredFieldValidator id="ReqEmail"
+                        CssClass="align-left"
+                        ControlToValidate="tbxEmail"
+                        Display="Dynamic"
+                        ErrorMessage="Please enter your Email!"
+                        runat="server"/>
                     <br />
-                    <asp:TextBox ID="Password1" type="password" placeholder="Password" class="pass-word" runat="server"/><br />
+
+                    <asp:TextBox ID="tbxPassword" type="password" placeholder="Password" class="pass-word" runat="server"/><br />
+                    <asp:RequiredFieldValidator id="ReqPassword"
+                        CssClass="align-left"
+                        ControlToValidate="tbxPassword"
+                        Display="Dynamic"
+                        ErrorMessage="Please enter your password!"
+                        runat="server"/>
+
+                    <span id="passValidation" runat="server" visible="false" class="align-left">Invalid Email or Password</span>
                     <br />
-                    <asp:Button ID="Button1" runat="server" Text="Login" CssClass="log-in" />
+                    <asp:Button ID="btnSignIn" runat="server" Text="Login" CssClass="log-in" OnClick="Button1_Click" />
                     <br />
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="/forgotYourPassword.aspx" CssClass="forgot-password">Forgot your password?</asp:HyperLink>
+
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="/forgotYourPassword.aspx" CssClass="forgot-password">Forgot your password?</asp:HyperLink>
+                    
                     <br />
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Not Registered?
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/Register.aspx" CssClass="register-link">Create an Account</asp:HyperLink>
+                    <div id="createAccount">
+                    <span>Not Registered?</span>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="/Registration.aspx" CssClass="register-link">Create an Account</asp:HyperLink>
+                    </div>
                     <br />
                 </td>
             </tr>

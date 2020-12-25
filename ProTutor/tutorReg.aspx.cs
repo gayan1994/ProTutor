@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProTutor.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -23,10 +24,35 @@ namespace ProTutor
                 var lName = tbxlName.Text;
                 var eMail = tbxEmail.Text;
                 var mobNo = tbxMobNum.Text;
-                var password = Pass2.Text;
+                var dob = DOBPicker.Value;
+                var password = CryptoHelper.GetHashString(Pass2.Text);
                 var highestQualification = RadioButtonList1.SelectedValue;
 
-                string connectionString = @"Data Source=.;Initial Catalog=TutorDb;Integrated Security=True";
+                string[] dateParts = dob.Split('-');
+
+                var year = int.Parse(dateParts[0]);
+                var month = int.Parse(dateParts[1]);
+                var day = int.Parse(dateParts[2]);
+
+                if (year > DateTime.Now.Year)
+                {
+                    dobValidation.Visible = true;
+                    return;
+                }
+
+                if (year == DateTime.Now.Year && month > DateTime.Now.Month)
+                {
+                    dobValidation.Visible = true;
+                    return;
+                }
+
+                if(year == DateTime.Now.Year && month == DateTime.Now.Month && day > DateTime.Now.Day)
+                {
+                    dobValidation.Visible = true;
+                    return;
+                }
+
+                dobValidation.Visible = false;
 
                 string commandText = $@"
     INSERT INTO [dbo].[Tutor]
@@ -42,11 +68,11 @@ namespace ProTutor
            ,'{lName}'
            ,'{eMail}'
            ,'{mobNo}'
-           ,NULL
+           ,'{dob}'
            ,'{password}'
            ,'{highestQualification}')";
 
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(Constants.CONN_STRING))
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))
                 {
                     conn.Open();
