@@ -161,7 +161,9 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="studentReg.aspx" />
+    <Content Include="TutorProfile.aspx" />
     <Content Include="tutorReg.aspx" />
+    <Content Include="TutorSearch.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -239,12 +241,26 @@
     <Compile Include="studentReg.aspx.designer.cs">
       <DependentUpon>studentReg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TutorProfile.aspx.cs">
+      <DependentUpon>TutorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorProfile.aspx.designer.cs">
+      <DependentUpon>TutorProfile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tutorReg.aspx.cs">
       <DependentUpon>tutorReg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="tutorReg.aspx.designer.cs">
       <DependentUpon>tutorReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TutorSearch.aspx.cs">
+      <DependentUpon>TutorSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorSearch.aspx.designer.cs">
+      <DependentUpon>TutorSearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

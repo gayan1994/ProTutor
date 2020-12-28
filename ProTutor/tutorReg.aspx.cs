@@ -27,6 +27,11 @@ namespace ProTutor
                 var dob = DOBPicker.Value;
                 var password = CryptoHelper.GetHashString(Pass2.Text);
                 var highestQualification = RadioButtonList1.SelectedValue;
+                var school = tbxSchool.Text;
+                var mainSubject = tbxSubject.Text;
+                var curriculum = tbxCurruculum.Text;
+                var summary = tbxSummary.Text;
+                var hourlyRate = tbxHourlyRate.Text;
 
                 string[] dateParts = dob.Split('-');
 
@@ -54,6 +59,18 @@ namespace ProTutor
 
                 dobValidation.Visible = false;
 
+                string filePath = null;
+
+                //save profile picture
+                if (updProfilePicture.HasFile)
+                {
+                    //saving the file
+                    filePath = $"/Images/profile_{Guid.NewGuid()}.png";
+                    string fullpath = $"{HttpRuntime.AppDomainAppPath}{filePath}";
+                    updProfilePicture.SaveAs(fullpath);
+                }
+
+
                 string commandText = $@"
     INSERT INTO [dbo].[Tutor]
            ([FirstName]
@@ -62,7 +79,13 @@ namespace ProTutor
            ,[MobileNumber]
            ,[DOB]
            ,[Password]
-           ,[HighestQualificaton])
+           ,[HighestQualificaton]
+           ,[School]
+           ,[MainSubject]
+           ,[Curriculum]
+           ,[ProfilePicture]
+           ,[Summary]
+           ,[HourlyRate])
      VALUES
            ('{fName}'
            ,'{lName}'
@@ -70,7 +93,13 @@ namespace ProTutor
            ,'{mobNo}'
            ,'{dob}'
            ,'{password}'
-           ,'{highestQualification}')";
+           ,'{highestQualification}'
+           ,'{school}'
+           ,'{mainSubject}'
+           ,'{curriculum}'
+           ,'{filePath}'
+           ,'{summary}'
+           , {hourlyRate})";
 
                 using (SqlConnection conn = new SqlConnection(Constants.CONN_STRING))
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))

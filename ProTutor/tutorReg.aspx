@@ -116,10 +116,6 @@
                 <div class="question1">
                     <p>do you have experience in teaching?</p>
                 </div>
-
-                
-                
-
                 
                 <br />
                 <br />
@@ -136,49 +132,17 @@
                             <asp:ListItem>MSC</asp:ListItem>
                             <asp:ListItem>Phd</asp:ListItem>
                         </asp:RadioButtonList>
-                        <%--<li>
-                            <input type="radio" id="f-option" name="selector" />
-                            <label for="f-option">Experience</label>
-
-                            <div class="check"></div>
-                        </li>
-
-                        <li>
-                            <input type="radio" id="s-option" name="selector" />
-                            <label for="s-option">Degree</label>
-
-                            <div class="check">
-                                <div class="inside"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <input type="radio" id="t-option" name="selector" />
-                            <label for="t-option">MSC</label>
-
-                            <div class="check">
-                                <div class="inside"></div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <input type="radio" id="t-option" name="selector" />
-                            <label for="t-option">Phd</label>
-
-                            <div class="check">
-                                <div class="inside"></div>
-                            </div>
-                        </li>--%>
-
+                        
                     
                 </div>
-                <input id="Text1" type="text" placeholder="What is the name of the school?"/><br />
-                <input id="Text6" type="text" placeholder="What is the main subject you teach?"/><br />
-                <input id="Text6" type="text" placeholder="Which curriculum do you teach?"/><br />
-                <input id="Text6" type="text" placeholder="In what year did you start teaching?"/><br />
-                <input id="Text6" type="text" placeholder="Submit your Certificate"/><br />
-                <input id="Text6" type="text" placeholder="What is the date which you can start upon our acceptance?"/><br />
-                <input id="Text6" type="text" placeholder="Do you have any other information to share with us to support your application?"/><br />
+                <asp:TextBox ID="tbxSchool" type="text" placeholder="What is the name of the school?" runat="server"/><br />
+                <asp:TextBox ID="tbxSubject" type="text" placeholder="What is the main subject you teach?" runat="server"/><br />
+                <asp:TextBox ID="tbxCurruculum" type="text" placeholder="Which curriculum do you teach?" runat="server"/><br />
+                <asp:FileUpload ID= "updProfilePicture" runat = "server" accept=".png" />
+                <asp:TextBox ID="tbxSummary" type="text" placeholder="Do you have any other information to share with us to support your application?" runat="server"/><br />
+                <asp:TextBox ID="tbxHourlyRate" type="text" placeholder="Hourly rate?" runat="server"/><br />
+                <asp:CompareValidator runat="server" Operator="DataTypeCheck" Type="Double" 
+                    ControlToValidate="tbxHourlyRate" ErrorMessage="Value must be a number" />
 
                 <asp:TextBox ID="Pass2" type="password" placeholder="Password" runat="server"/>
                 <asp:RequiredFieldValidator id="ReqPass"
@@ -217,7 +181,7 @@
 
 
 
-                <asp:Button ID="Button1" runat="server" Text="Sign in" class="sign-in" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="Sign up" class="sign-in" OnClick="Button1_Click" />
 
 
 
