@@ -11,88 +11,70 @@ namespace ProTutor
 {
 
 
-    public partial class TutorProfile
+    public partial class AddLessonRequest
     {
 
         /// <summary>
-        /// imgProPic control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgProPic;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblName control.
+        /// inptStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inptStart;
 
         /// <summary>
-        /// lblSubject control.
+        /// startTimeValidation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSubject;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl startTimeValidation;
 
         /// <summary>
-        /// lblQualification control.
+        /// inptEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblQualification;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inptEnd;
 
         /// <summary>
-        /// lblCurriculum control.
+        /// endTimeValidation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCurriculum;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl endTimeValidation;
 
         /// <summary>
-        /// lblSchool control.
+        /// tbxHourlyRate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSchool;
+        protected global::System.Web.UI.WebControls.TextBox tbxHourlyRate;
 
         /// <summary>
-        /// lblSummary control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSummary;
-
-        /// <summary>
-        /// lblHourlyRate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHourlyRate;
-
-        /// <summary>
-        /// btnRequestLesson control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRequestLesson;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }

@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddLessonRequest.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -129,6 +130,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="LessonRequests.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -164,12 +166,20 @@
     <Content Include="TutorProfile.aspx" />
     <Content Include="tutorReg.aspx" />
     <Content Include="TutorSearch.aspx" />
+    <Content Include="ViewLessonRequest.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddLessonRequest.aspx.cs">
+      <DependentUpon>AddLessonRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddLessonRequest.aspx.designer.cs">
+      <DependentUpon>AddLessonRequest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -205,6 +215,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\CryptoHelper.cs" />
+    <Compile Include="LessonRequests.aspx.cs">
+      <DependentUpon>LessonRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LessonRequests.aspx.designer.cs">
+      <DependentUpon>LessonRequests.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +278,13 @@
     </Compile>
     <Compile Include="TutorSearch.aspx.designer.cs">
       <DependentUpon>TutorSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLessonRequest.aspx.cs">
+      <DependentUpon>ViewLessonRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLessonRequest.aspx.designer.cs">
+      <DependentUpon>ViewLessonRequest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

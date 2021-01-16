@@ -90,5 +90,11 @@ namespace ProTutor
                 }
             }
         }
+
+        protected void btnRequestLesson_Click(object sender, EventArgs e)
+        {
+            string id = Request.QueryString["TutorId"];
+            Response.Redirect($"AddLessonRequest.aspx?TutorId={id}");
+        }
     }
 }

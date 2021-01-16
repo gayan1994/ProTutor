@@ -24,12 +24,12 @@ namespace ProTutor
             using (var connection = new SqlConnection(Constants.CONN_STRING))
             using (var command = new SqlCommand($@"
 
-SELECT Email, Password, 'Student' AS Role FROM Student 
+SELECT Id, Email, Password, 'Student' AS Role FROM Student 
 WHERE Email = '{email}'
 
 UNION
 
-SELECT Email, Password, 'Tutor' AS Role FROM Tutor 
+SELECT Id, Email, Password, 'Tutor' AS Role FROM Tutor 
 WHERE Email = '{email}'", connection))
             {
                 connection.Open();
@@ -40,9 +40,14 @@ WHERE Email = '{email}'", connection))
 
                 using (var reader = command.ExecuteReader())
                 {
+                    int id = 0;
+                    string role = "";
+
                     if (reader.Read()) // Don't assume we have any rows.
                     {
-                        string passwordHashDB = reader.GetString(1);
+                        id = reader.GetInt32(0);
+                        string passwordHashDB = reader.GetString(2);
+                        role = reader.GetString(3);
                         
                         if(passwordHash == passwordHashDB)
                         {
@@ -53,7 +58,20 @@ WHERE Email = '{email}'", connection))
                     if (!isPasswordValid)
                     {
                         passValidation.Visible = true;
+                        return;
                     }
+                   
+                    Session["Role"] = role;
+
+                    if (role == "Student")
+                    {
+                        Session["StudentId"] = id;
+                    }
+                    else
+                    {
+                        Session["TutorId"] = id;
+                    }
+
                     //To do: redirect to main page
                 }
             }

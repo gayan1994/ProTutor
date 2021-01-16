@@ -46,8 +46,11 @@
             <td> <asp:Label ID="lblHourlyRate" runat="server"> </asp:Label></td>
         </tr>
 
-    </table>
+    </table> <br />
 
+    <form runat="server">
+         <asp:Button ID="btnRequestLesson" runat="server" Text="Send Lesson Request" OnClick="btnRequestLesson_Click"/>
+    </form>
 
 </body>
 </html>
