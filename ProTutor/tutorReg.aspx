@@ -144,6 +144,34 @@
                 <asp:CompareValidator runat="server" Operator="DataTypeCheck" Type="Double" 
                     ControlToValidate="tbxHourlyRate" ErrorMessage="Value must be a number" />
 
+                <asp:TextBox ID="tbxAccountNo" placeholder="Account Number" runat="server"/>
+                <asp:RequiredFieldValidator id="accountNoValidator"
+                    ControlToValidate="tbxAccountNo"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter the Account Number!"
+                    runat="server"/>
+
+                <asp:TextBox ID="tbxBank" placeholder="Name of the Bank" runat="server"/>
+                <asp:RequiredFieldValidator id="nameofBankValidator"
+                    ControlToValidate="tbxBank"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter the bank name!"
+                    runat="server"/>
+
+                <asp:TextBox ID="tbxBranchName" placeholder="Branch name" runat="server"/>
+                <asp:RequiredFieldValidator id="branchNameValidator"
+                    ControlToValidate="tbxBranchName"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter the branch name!"
+                    runat="server"/>
+
+                 <asp:TextBox ID="tbxAccountHolderName" placeholder="Account holder's name" runat="server"/>
+                <asp:RequiredFieldValidator id="accountHoldersNameValidator"
+                    ControlToValidate="tbxAccountHolderName"
+                    Display="Dynamic"
+                    ErrorMessage="Please enter the account holder's name!"
+                    runat="server"/>
+
                 <asp:TextBox ID="Pass2" type="password" placeholder="Password" runat="server"/>
                 <asp:RequiredFieldValidator id="ReqPass"
                     ControlToValidate="Pass2"

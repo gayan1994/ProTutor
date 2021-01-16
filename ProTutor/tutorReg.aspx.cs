@@ -70,6 +70,10 @@ namespace ProTutor
                     updProfilePicture.SaveAs(fullpath);
                 }
 
+                var accountNo = tbxAccountNo.Text;
+                var bank = tbxBank.Text;
+                var branch = tbxBranchName.Text;
+                var accountHolderName = tbxAccountHolderName.Text;
 
                 string commandText = $@"
     INSERT INTO [dbo].[Tutor]
@@ -99,7 +103,22 @@ namespace ProTutor
            ,'{curriculum}'
            ,'{filePath}'
            ,'{summary}'
-           , {hourlyRate})";
+           , {hourlyRate})
+
+    DECLARE @ID AS INT = SCOPE_IDENTITY()
+
+    INSERT INTO [dbo].[BankAccount]
+           ([AccountNo]
+           ,[Bank]
+           ,[Branch]
+           ,[Name]
+           ,[TutorId])
+     VALUES
+           ('{accountNo}'
+           ,'{bank}'
+           ,'{branch}'
+           ,'{accountHolderName}'
+           ,@ID)";
 
                 using (SqlConnection conn = new SqlConnection(Constants.CONN_STRING))
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))

@@ -85,7 +85,7 @@ namespace ProTutor
            ,'{dob}'
            ,'{password}')
 
-DECLARE @ID AS INT = SCOPE_IDENTITY()
+    DECLARE @ID AS INT = SCOPE_IDENTITY()
 
 	INSERT INTO [dbo].[Card]
            ([StudentId]
