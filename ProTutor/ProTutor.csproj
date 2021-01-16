@@ -162,6 +162,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="StudentFinancial.aspx" />
+    <Content Include="StudentProfile.aspx" />
     <Content Include="studentReg.aspx" />
     <Content Include="TutorProfile.aspx" />
     <Content Include="tutorReg.aspx" />
@@ -250,6 +252,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFinancial.aspx.cs">
+      <DependentUpon>StudentFinancial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentFinancial.aspx.designer.cs">
+      <DependentUpon>StudentFinancial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentProfile.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentProfile.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="studentReg.aspx.cs">
       <DependentUpon>studentReg.aspx</DependentUpon>

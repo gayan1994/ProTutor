@@ -64,6 +64,10 @@ namespace ProTutor
 
                 dobValidation.Visible = false;
 
+                var cardNumber = tbxCardNumber.Text;
+                var CVN = tbxCVN.Text;
+                var expiryMonth = tbxExpiryMonth.Text;
+                var expiryYear = tbxExpiryYear.Text;
 
                 string commandText = $@"
     INSERT INTO [dbo].[Student]
@@ -79,7 +83,20 @@ namespace ProTutor
            ,'{eMail}'
            ,'{mobNo}'
            ,'{dob}'
-           ,'{password}')";
+           ,'{password}')
+
+DECLARE @ID AS INT = SCOPE_IDENTITY()
+
+	INSERT INTO [dbo].[Card]
+           ([StudentId]
+           ,[CardNo]
+           ,[CVN]
+           ,[ExpiryDate])
+     VALUES
+           (@ID
+           ,'{cardNumber}'
+           ,'{CVN}'
+           ,'{expiryMonth}/{expiryYear}')";
 
                 using (SqlConnection conn = new SqlConnection(Constants.CONN_STRING))
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))
@@ -89,6 +106,7 @@ namespace ProTutor
                     conn.Close();
                 }
 
+              
 
             }
             catch (Exception ef)
