@@ -106,8 +106,7 @@ namespace ProTutor
                     conn.Close();
                 }
 
-              
-
+                Response.Redirect("Login.aspx");
             }
             catch (Exception ef)
             {

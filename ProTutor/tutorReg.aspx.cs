@@ -127,6 +127,8 @@ namespace ProTutor
                     cmd.ExecuteNonQuery();
                     conn.Close();
                 }
+
+                Response.Redirect("Login.aspx");
             }
             catch (Exception ex)
             {

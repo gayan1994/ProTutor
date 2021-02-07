@@ -199,29 +199,12 @@
                     type="String" 
                     errormessage="Password and Repeated password doesn't match" /><br />
 
-
-
-
-
-
-
                 <asp:CheckBox ID="CheckBox1" runat="server" Text="I agree to all statements in Terms of service" /><br />
-
-
 
                 <asp:Button ID="Button1" runat="server" Text="Sign up" class="sign-in" OnClick="Button1_Click" />
 
-
-
             </div>
-
-
-
-
-
         </div>
-
-
     </form>
 
 

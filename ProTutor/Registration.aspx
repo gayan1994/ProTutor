@@ -26,8 +26,17 @@
             height:25%;
         }
 
-        .crtstudent{
-            
+        .button{
+            color: white;
+            background-color:#254F88;
+            font-size: 1rem;
+            padding: 5px 10px;
+            font-weight: 200;
+        }
+        .button:hover{
+            color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
         }
 
         </style>
@@ -41,7 +50,7 @@
 
 
                 <p>Click here for free registration</p><br />
-                <asp:Button ID="Button1" runat="server" Text="Create as student" class="crtstudent"/>
+                <asp:Button class="button" runat="server" Text="Create as student"/>
                 <br /><br /><br />
 
 
@@ -54,7 +63,7 @@
                 <div class="sentence"> <p>Are you a tutor?</p> </div>
 
                 <p>Click here for free registration</p><br />
-                <asp:Button ID="Button2" runat="server" Text="Create as tutor" class="crttutor"/>
+                <asp:Button runat="server" Text="Create as tutor" class="button"/>
                 <br /><br /><br />
 
 
