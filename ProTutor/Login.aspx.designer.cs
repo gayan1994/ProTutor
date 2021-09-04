@@ -15,15 +15,6 @@ namespace ProTutor
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// tbxEmail control.
         /// </summary>
         /// <remarks>
@@ -60,15 +51,6 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqPassword;
 
         /// <summary>
-        /// passValidation control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl passValidation;
-
-        /// <summary>
         /// btnSignIn control.
         /// </summary>
         /// <remarks>
@@ -78,13 +60,13 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.Button btnSignIn;
 
         /// <summary>
-        /// HyperLink2 control.
+        /// passValidation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl passValidation;
 
         /// <summary>
         /// HyperLink1 control.

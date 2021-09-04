@@ -129,8 +129,34 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Image\student.jpg" />
+    <Content Include="PublishAds.aspx" />
+    <Content Include="ViewAds.aspx" />
+    <Content Include="StudentHome.aspx" />
+    <Content Include="TutorHome.aspx" />
+    <Content Include="TutorPublicProfile.aspx" />
+    <Content Include="TermsofUse.aspx" />
+    <Content Include="PrivacyPolicy.aspx" />
+    <Content Include="SentLessonRequests.aspx" />
+    <Content Include="ViewSentLessonRequest.aspx" />
+    <Content Include="EditStudentProfile.aspx" />
+    <Content Include="EditTutorProfile.aspx" />
+    <Content Include="TutorConversations.aspx" />
+    <Content Include="StudentAds.aspx" />
+    <Content Include="EditAd.aspx" />
+    <Content Include="TutorMessages.aspx" />
+    <Content Include="StudentConversations.aspx" />
+    <Content Include="StudentMessages.aspx" />
+    <Content Include="StudentPublicProfile.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="LessonRequests.aspx" />
+    <Content Include="Image\8c3ebc224ce7387340d1399b7f22fbf1.jpg" />
+    <Content Include="Image\AccountType.jpg" />
+    <Content Include="Image\dddd.jpg" />
+    <Content Include="Image\homepage.jpg" />
+    <Content Include="Image\homePageslide.jpg" />
+    <Content Include="Image\loginpage.jpg" />
+    <Content Include="Image\logo.png" />
+    <Content Include="ReceivedLessonRequests.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -167,7 +193,7 @@
     <Content Include="TutorProfile.aspx" />
     <Content Include="tutorReg.aspx" />
     <Content Include="TutorSearch.aspx" />
-    <Content Include="ViewLessonRequest.aspx" />
+    <Content Include="ViewReceivedLessonRequest.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -205,6 +231,7 @@
     <Compile Include="ContactUs.aspx.designer.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Crypto.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,13 +242,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\CryptoHelper.cs" />
-    <Compile Include="LessonRequests.aspx.cs">
-      <DependentUpon>LessonRequests.aspx</DependentUpon>
+    <Compile Include="ReceivedLessonRequests.aspx.cs">
+      <DependentUpon>ReceivedLessonRequests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LessonRequests.aspx.designer.cs">
-      <DependentUpon>LessonRequests.aspx</DependentUpon>
+    <Compile Include="ReceivedLessonRequests.aspx.designer.cs">
+      <DependentUpon>ReceivedLessonRequests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -287,12 +313,12 @@
     <Compile Include="TutorSearch.aspx.designer.cs">
       <DependentUpon>TutorSearch.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewLessonRequest.aspx.cs">
-      <DependentUpon>ViewLessonRequest.aspx</DependentUpon>
+    <Compile Include="ViewReceivedLessonRequest.aspx.cs">
+      <DependentUpon>ViewReceivedLessonRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewLessonRequest.aspx.designer.cs">
-      <DependentUpon>ViewLessonRequest.aspx</DependentUpon>
+    <Compile Include="ViewReceivedLessonRequest.aspx.designer.cs">
+      <DependentUpon>ViewReceivedLessonRequest.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -300,6 +326,132 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PublishAds.aspx.cs">
+      <DependentUpon>PublishAds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublishAds.aspx.designer.cs">
+      <DependentUpon>PublishAds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAds.aspx.cs">
+      <DependentUpon>ViewAds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAds.aspx.designer.cs">
+      <DependentUpon>ViewAds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TutorHome.aspx.cs">
+      <DependentUpon>TutorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorHome.aspx.designer.cs">
+      <DependentUpon>TutorHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TutorPublicProfile.aspx.cs">
+      <DependentUpon>TutorPublicProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorPublicProfile.aspx.designer.cs">
+      <DependentUpon>TutorPublicProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsofUse.aspx.cs">
+      <DependentUpon>TermsofUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsofUse.aspx.designer.cs">
+      <DependentUpon>TermsofUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SentLessonRequests.aspx.cs">
+      <DependentUpon>SentLessonRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SentLessonRequests.aspx.designer.cs">
+      <DependentUpon>SentLessonRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSentLessonRequest.aspx.cs">
+      <DependentUpon>ViewSentLessonRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSentLessonRequest.aspx.designer.cs">
+      <DependentUpon>ViewSentLessonRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentProfile.aspx.cs">
+      <DependentUpon>EditStudentProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditStudentProfile.aspx.designer.cs">
+      <DependentUpon>EditStudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditTutorProfile.aspx.cs">
+      <DependentUpon>EditTutorProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditTutorProfile.aspx.designer.cs">
+      <DependentUpon>EditTutorProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TutorConversations.aspx.cs">
+      <DependentUpon>TutorConversations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorConversations.aspx.designer.cs">
+      <DependentUpon>TutorConversations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAds.aspx.cs">
+      <DependentUpon>StudentAds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAds.aspx.designer.cs">
+      <DependentUpon>StudentAds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditAd.aspx.cs">
+      <DependentUpon>EditAd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditAd.aspx.designer.cs">
+      <DependentUpon>EditAd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TutorMessages.aspx.cs">
+      <DependentUpon>TutorMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TutorMessages.aspx.designer.cs">
+      <DependentUpon>TutorMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentConversations.aspx.cs">
+      <DependentUpon>StudentConversations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentConversations.aspx.designer.cs">
+      <DependentUpon>StudentConversations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMessages.aspx.cs">
+      <DependentUpon>StudentMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMessages.aspx.designer.cs">
+      <DependentUpon>StudentMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPublicProfile.aspx.cs">
+      <DependentUpon>StudentPublicProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPublicProfile.aspx.designer.cs">
+      <DependentUpon>StudentPublicProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

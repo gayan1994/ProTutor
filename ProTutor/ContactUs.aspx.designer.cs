@@ -15,48 +15,57 @@ namespace ProTutor
     {
 
         /// <summary>
-        /// form1 control.
+        /// tbxYourName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox tbxYourName;
 
         /// <summary>
-        /// yourName control.
+        /// ReqName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox yourName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqName;
 
         /// <summary>
-        /// yourEmail control.
+        /// tbxYourEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox yourEmail;
+        protected global::System.Web.UI.WebControls.TextBox tbxYourEmail;
 
         /// <summary>
-        /// message control.
+        /// ReqEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox message;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqEmail;
 
         /// <summary>
-        /// sendMessage control.
+        /// tbxMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sendMessage;
+        protected global::System.Web.UI.WebControls.TextBox tbxMessage;
+
+        /// <summary>
+        /// ReqMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqMessage;
     }
 }

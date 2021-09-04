@@ -15,15 +15,6 @@ namespace ProTutor
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// tbxfName control.
         /// </summary>
         /// <remarks>
@@ -87,6 +78,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
 
         /// <summary>
+        /// emailValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl emailValidation;
+
+        /// <summary>
         /// tbxMobNum control.
         /// </summary>
         /// <remarks>
@@ -105,6 +105,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqMobNo;
 
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// DOBPicker control.
         /// </summary>
         /// <remarks>
@@ -112,6 +121,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl DOBPicker;
+
+        /// <summary>
+        /// ReqBday control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqBday;
 
         /// <summary>
         /// dobValidation control.
@@ -123,6 +141,24 @@ namespace ProTutor
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl dobValidation;
 
         /// <summary>
+        /// tbxHometown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxHometown;
+
+        /// <summary>
+        /// ReqHometown control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqHometown;
+
+        /// <summary>
         /// RadioButtonList1 control.
         /// </summary>
         /// <remarks>
@@ -132,13 +168,13 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
 
         /// <summary>
-        /// tbxSchool control.
+        /// ReqQualification control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxSchool;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqQualification;
 
         /// <summary>
         /// tbxSubject control.
@@ -150,6 +186,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox tbxSubject;
 
         /// <summary>
+        /// ReqtbxSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqtbxSubject;
+
+        /// <summary>
         /// tbxCurruculum control.
         /// </summary>
         /// <remarks>
@@ -157,6 +202,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxCurruculum;
+
+        /// <summary>
+        /// ReqCurriculum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqCurriculum;
 
         /// <summary>
         /// updProfilePicture control.
@@ -186,76 +240,13 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox tbxHourlyRate;
 
         /// <summary>
-        /// tbxAccountNo control.
+        /// ReqHourlyRate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxAccountNo;
-
-        /// <summary>
-        /// accountNoValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator accountNoValidator;
-
-        /// <summary>
-        /// tbxBank control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxBank;
-
-        /// <summary>
-        /// nameofBankValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameofBankValidator;
-
-        /// <summary>
-        /// tbxBranchName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxBranchName;
-
-        /// <summary>
-        /// branchNameValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator branchNameValidator;
-
-        /// <summary>
-        /// tbxAccountHolderName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxAccountHolderName;
-
-        /// <summary>
-        /// accountHoldersNameValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator accountHoldersNameValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqHourlyRate;
 
         /// <summary>
         /// Pass2 control.
@@ -312,13 +303,94 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.CompareValidator cmpNumbers;
 
         /// <summary>
-        /// CheckBox1 control.
+        /// tbxAccountNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.TextBox tbxAccountNo;
+
+        /// <summary>
+        /// accountNoValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator accountNoValidator;
+
+        /// <summary>
+        /// RegAccountNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegAccountNo;
+
+        /// <summary>
+        /// tbxBank control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxBank;
+
+        /// <summary>
+        /// nameofBankValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameofBankValidator;
+
+        /// <summary>
+        /// tbxBranchName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxBranchName;
+
+        /// <summary>
+        /// branchNameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator branchNameValidator;
+
+        /// <summary>
+        /// tbxAccountHolderName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxAccountHolderName;
+
+        /// <summary>
+        /// accountHoldersNameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator accountHoldersNameValidator;
+
+        /// <summary>
+        /// CheckBoxAgreement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxAgreement;
 
         /// <summary>
         /// Button1 control.

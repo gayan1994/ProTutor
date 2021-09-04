@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ProTutor
 {
@@ -12,53 +7,44 @@ namespace ProTutor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = Request.QueryString["StudentId"];
+            int id = (int)Session["StudentId"];
 
-            string commandText = $@"SELECT [ID]
-      ,[FirstName] + ' '+ [LastName] AS Name
-      ,[Email]
-      ,[MobileNumber]
-      ,[DOB]
-  FROM [TutorDb].[dbo].[Student] 
-  WHERE ID = {id}";
+            string commandText = @"SELECT [ID]
+                                         ,[FirstName] + ' ' + [LastName] AS Name
+                                         ,[Email]
+                                         ,[MobileNumber]
+                                         ,[DOB]
+                                   FROM [TutorDb].[dbo].[Student] 
+                                   WHERE [ID] = " + id;
 
-            using (SqlConnection conn = new SqlConnection(Constants.CONN_STRING))
-            using (var command = new SqlCommand(commandText, conn))
-            {
-                conn.Open();
+            SqlConnection conn = new SqlConnection(Constants.CONN_STRING);
+            var command = new SqlCommand(commandText, conn);
 
-                using (var reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        if (!reader.IsDBNull(1))
-                        {
-                            string name = reader.GetString(1);
-                            lblName.Text = name;
-                        }
+            conn.Open();
 
-                        if (!reader.IsDBNull(2))
-                        {
-                            string email = reader.GetString(2);
-                            lblEmail.Text = email;
-                        }
+            var reader = command.ExecuteReader();
+            reader.Read();
 
-                        if (!reader.IsDBNull(3))
-                        {
-                            string mobileNumber = reader.GetString(3);
-                            lblMobileNumber.Text = mobileNumber;
-                        }
+            string name = reader.GetString(1);
+            lblName.Text = name;
 
-                        if (!reader.IsDBNull(4))
-                        {
-                            string dob = reader.GetString(4);
-                            lblDOB.Text = dob;
-                        }
-                    }
+            string email = reader.GetString(2);
+            lblEmail.Text = email;
 
+            string mobileNumber = reader.GetString(3);
+            lblMobileNumber.Text = mobileNumber;
 
-                }
-            }
+            // Calculate and show the age
+
+            DateTime dob = reader.GetDateTime(4);
+            TimeSpan span = (DateTime.Now).Subtract(dob);
+
+            var DifferenceInDays = span.TotalDays;
+            var DifferenceInYears = (DifferenceInDays / 365);
+            var age = Math.Round(DifferenceInYears);
+
+            lblAge.Text = age.ToString();
+
         }
     }
 }

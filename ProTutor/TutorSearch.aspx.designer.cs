@@ -15,15 +15,6 @@ namespace ProTutor
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// tbxName control.
         /// </summary>
         /// <remarks>
@@ -60,6 +51,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.TextBox tbxCurriculum;
 
         /// <summary>
+        /// tbxLocation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxLocation;
+
+        /// <summary>
         /// tbxHourlyRate control.
         /// </summary>
         /// <remarks>
@@ -67,6 +67,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxHourlyRate;
+
+        /// <summary>
+        /// RadioButtonList2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList2;
 
         /// <summary>
         /// btnSearch control.

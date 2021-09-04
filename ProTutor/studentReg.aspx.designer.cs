@@ -15,15 +15,6 @@ namespace ProTutor
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// tbxFName control.
         /// </summary>
         /// <remarks>
@@ -87,6 +78,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
 
         /// <summary>
+        /// emailValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl emailValidation;
+
+        /// <summary>
         /// tbxMobNo control.
         /// </summary>
         /// <remarks>
@@ -105,6 +105,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqMobNo;
 
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// DOBPicker control.
         /// </summary>
         /// <remarks>
@@ -112,6 +121,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl DOBPicker;
+
+        /// <summary>
+        /// ReqBday control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqBday;
 
         /// <summary>
         /// dobValidation control.
@@ -195,6 +213,15 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
+        /// RegCardNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegCardNumber;
+
+        /// <summary>
         /// tbxCVN control.
         /// </summary>
         /// <remarks>
@@ -211,6 +238,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator cvnValidator;
+
+        /// <summary>
+        /// RegCVN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegCVN;
 
         /// <summary>
         /// tbxExpiryMonth control.
@@ -231,6 +267,24 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RequiredFieldValidator expiryMonthValidator;
 
         /// <summary>
+        /// RegExpiryMonth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegExpiryMonth;
+
+        /// <summary>
+        /// expiryMonthValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl expiryMonthValidation;
+
+        /// <summary>
         /// tbxExpiryYear control.
         /// </summary>
         /// <remarks>
@@ -249,13 +303,31 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.RequiredFieldValidator expiryYearValidator;
 
         /// <summary>
-        /// CheckBox1 control.
+        /// RegExpiryYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegExpiryYear;
+
+        /// <summary>
+        /// expiryYearValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl expiryYearValidation;
+
+        /// <summary>
+        /// CheckBoxAgreement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxAgreement;
 
         /// <summary>
         /// Button1 control.

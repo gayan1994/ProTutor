@@ -15,15 +15,6 @@ namespace ProTutor
     {
 
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
         /// inptStart control.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inptStart;
+
+        /// <summary>
+        /// ReqStartTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqStartTime;
 
         /// <summary>
         /// startTimeValidation control.
@@ -51,6 +51,15 @@ namespace ProTutor
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inptEnd;
 
         /// <summary>
+        /// ReqEndTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqEndTime;
+
+        /// <summary>
         /// endTimeValidation control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbxHourlyRate;
+
+        /// <summary>
+        /// ReqHourlyRate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqHourlyRate;
 
         /// <summary>
         /// btnSave control.

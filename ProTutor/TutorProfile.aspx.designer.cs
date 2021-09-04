@@ -24,6 +24,33 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.Image imgProPic;
 
         /// <summary>
+        /// lblCompletedSessions control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCompletedSessions;
+
+        /// <summary>
+        /// lblTotalRequests control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalRequests;
+
+        /// <summary>
+        /// lblNotResponded control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNotResponded;
+
+        /// <summary>
         /// lblName control.
         /// </summary>
         /// <remarks>
@@ -31,6 +58,24 @@ namespace ProTutor
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblName;
+
+        /// <summary>
+        /// lblEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmail;
+
+        /// <summary>
+        /// lblAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAge;
 
         /// <summary>
         /// lblSubject control.
@@ -60,13 +105,13 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.Label lblCurriculum;
 
         /// <summary>
-        /// lblSchool control.
+        /// lblHometown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSchool;
+        protected global::System.Web.UI.WebControls.Label lblHometown;
 
         /// <summary>
         /// lblSummary control.
@@ -87,12 +132,39 @@ namespace ProTutor
         protected global::System.Web.UI.WebControls.Label lblHourlyRate;
 
         /// <summary>
-        /// btnRequestLesson control.
+        /// lblCurrentBalance control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRequestLesson;
+        protected global::System.Web.UI.WebControls.Label lblCurrentBalance;
+
+        /// <summary>
+        /// lblRating control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRating;
+
+        /// <summary>
+        /// btnCashOut control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCashOut;
+
+        /// <summary>
+        /// lblCashoutInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCashoutInfo;
     }
 }

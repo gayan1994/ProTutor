@@ -1,38 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ProTutor
 {
     public partial class AddLessonRequest : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
         protected void btnSave_Click(object sender, EventArgs e)
         {
+            // get the tuter Id from the URL
             string tutorId = Request.QueryString["TutorId"];
             var studentId = (int)Session["StudentId"];
 
             var startTime = inptStart.Value;
+            // remove the T in the startTime
             startTime = startTime.Replace('T', ' ');
 
             var endTime = inptEnd.Value;
+            // remove the T in the endTime
             endTime = endTime.Replace('T', ' ');
 
             var hourlyRate = tbxHourlyRate.Text;
 
-            //validate start and end time
+            // validate start and end time
             var startDate = DateTime.Parse(startTime);
             var endDate = DateTime.Parse(endTime);
 
-            if(startDate < DateTime.Now)
+            if (startDate < DateTime.Now)
             {
                 startTimeValidation.Visible = true;
                 return;
@@ -63,30 +56,28 @@ namespace ProTutor
             }
 
 
-            string commandText = $@"
-    INSERT INTO [dbo].[LessonRequest]
-           ([StudentId]
-           ,[TutorId]
-           ,[Start]
-           ,[End]
-           ,[HourlyRate]
-           ,[Status])
-     VALUES
-           ({studentId}
-           ,{tutorId}
-           ,'{startTime}'
-           ,'{endTime}'
-           ,{hourlyRate}
-           ,'Pending')";
+            string commandText = @"INSERT INTO [dbo].[LessonRequest]([StudentId]
+                                                                    ,[TutorId]
+                                                                    ,[Start]
+                                                                    ,[End]
+                                                                    ,[HourlyRate]
+                                                                    ,[Status])
+                                                              VALUES
+                                                                    (" + studentId +
+                                                                    "," + tutorId +
+                                                                    ",'" + startTime + "'" +
+                                                                    ",'" + endTime + "'" +
+                                                                    ",'" + hourlyRate + "'" +
+                                                                    ",'Pending')";
 
-            using (SqlConnection conn = new SqlConnection(Constants.CONN_STRING))
-            using (SqlCommand cmd = new SqlCommand(commandText, conn))
-            {
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
-            }
+            SqlConnection conn = new SqlConnection(Constants.CONN_STRING);
+            SqlCommand cmd = new SqlCommand(commandText, conn);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+            Response.Redirect("~/SentLessonRequests.aspx");
         }
     }
 }
-    

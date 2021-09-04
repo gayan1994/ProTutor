@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ProTutor
 {
@@ -11,7 +7,15 @@ namespace ProTutor
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((string)Session["Role"] == "Student")
+            {
+                Response.Redirect("StudentHome");
+            }
 
+            if ((string)Session["Role"] == "Tutor")
+            {
+                Response.Redirect("TutorHome");
+            }
         }
     }
 }
