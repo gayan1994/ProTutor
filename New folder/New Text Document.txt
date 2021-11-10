@@ -1,0 +1,10 @@
+Regarding the issue of getting an internal server error when trying to retrieve all budget line records.
+
+The error happens here.
+
+I think it's because the JobType is added in the included properties here but
+
+
+the BudgetLine doesn't have the JobType navigation property in it's entity.
+
+Category,Department Section,Employee,Template,Budget properties are also not included as navigation properties in the BudgetLine entity
